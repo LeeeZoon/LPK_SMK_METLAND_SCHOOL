@@ -19,8 +19,6 @@
     position: relative; 
 }
 
-
-
 #font_navbar a {
     font-family: "Montserrat", sans-serif; 
     font-weight: 700;
@@ -29,26 +27,122 @@
 }
 
 .hero-text {
-  color: white;
-  text-shadow: 0 2px 4px rgb(99, 99, 99);
-  text-align: left;
-  margin-right: 650px;
-  border-radius: 10px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 2; 
-}
-
+    color: white;
+    text-shadow: 0 2px 4px rgb(99, 99, 99);
+    text-align: left;
+    margin-right: 650px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2; 
+}   
+    
 .judul-atas {
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 10px;
-}
-
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}   
+    
 .judul-bawah {
-  font-size: 32px;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-}
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}   
+    
+    
+.kompetensi-section {
+
+    background-color: #0c2c59;
+    color: white;
+    padding: 100px 0;
+    font-family: "Montserrat", sans-serif;
+}   
+    
+.container-kompetensi {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}   
+    
+.kompetensi-text {
+    flex: 1;
+    min-width: 300px;
+}   
+    
+.kompetensi-text h2 {
+    color: rgb(255, 215, 55);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}   
+    
+.kompetensi-text p {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    line-height: 1.6;
+}   
+    
+.kompetensi-grid {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}   
+    
+.kompetensi-card {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    background: white;
+    color: #000000;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}   
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}    
+
+.kompetensi-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}   
+    
+.kompetensi-card h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}   
+    
+.kompetensi-card p {
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+}   
+    
+    
+.kompetensi-card:hover {
+    background-color: rgb(255, 215, 55);
+    transform: translateY(-5px);
+}   
+
